@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="Talabaty" customModuleProvider="target">
+            <connections>
+                <outlet property="BackScreenBarButton" destination="MEw-fa-f05" id="5D5-YD-AAK"/>
+                <outlet property="EmailTextField" destination="Za9-gH-ohN" id="60m-rO-uky"/>
+                <outlet property="NameTextField" destination="QMx-c2-doz" id="jyg-dO-Aps"/>
+                <outlet property="PasswordTextField" destination="TRv-OD-A1d" id="OLr-Sa-Bj9"/>
+                <outlet property="PhoneTextField" destination="1ur-bv-qXv" id="n12-Zx-dAG"/>
+                <outlet property="SignUpButton" destination="Q0e-yj-YBE" id="e3h-F7-mZy"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="AdB-KM-ggO">
+                    <rect key="frame" x="17" y="159" width="359" height="255"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4uv-9c-wAt">
+                            <rect key="frame" x="0.0" y="0.0" width="359" height="60"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YGZ-MR-xCa">
+                                    <rect key="frame" x="0.0" y="0.0" width="45" height="60"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fFo-Ul-nB9">
+                                            <rect key="frame" x="8" y="18" width="29" height="24"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UserTextField" translatesAutoresizingMaskIntoConstraints="NO" id="oF5-ks-Q6J">
+                                                    <rect key="frame" x="0.0" y="0.0" width="29" height="24"/>
+                                                </imageView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="45" id="6Dy-qT-53n"/>
+                                        <constraint firstItem="fFo-Ul-nB9" firstAttribute="top" secondItem="YGZ-MR-xCa" secondAttribute="top" constant="18" id="QKJ-Zj-F7M"/>
+                                        <constraint firstAttribute="bottom" secondItem="fFo-Ul-nB9" secondAttribute="bottom" constant="18" id="sM6-mG-OXJ"/>
+                                        <constraint firstItem="fFo-Ul-nB9" firstAttribute="leading" secondItem="YGZ-MR-xCa" secondAttribute="leading" constant="8" id="sVz-vN-4og"/>
+                                        <constraint firstAttribute="trailing" secondItem="fFo-Ul-nB9" secondAttribute="trailing" constant="8" id="t0L-Bx-WP1"/>
+                                    </constraints>
+                                </view>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  Full name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QMx-c2-doz">
+                                    <rect key="frame" x="45" y="0.0" width="314" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="ZqO-e3-QhY"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B9q-7D-EWt">
+                            <rect key="frame" x="0.0" y="65" width="359" height="60"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MV7-qy-2SY">
+                                    <rect key="frame" x="0.0" y="0.0" width="45" height="60"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9M0-qM-SLF">
+                                            <rect key="frame" x="8" y="24" width="29" height="18"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EmailTextField" translatesAutoresizingMaskIntoConstraints="NO" id="xpz-ld-eJc">
+                                                    <rect key="frame" x="0.0" y="0.0" width="29" height="18"/>
+                                                </imageView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="9M0-qM-SLF" firstAttribute="leading" secondItem="MV7-qy-2SY" secondAttribute="leading" constant="8" id="ASN-Ar-LQW"/>
+                                        <constraint firstAttribute="width" constant="45" id="ChA-Zj-Ods"/>
+                                        <constraint firstAttribute="trailing" secondItem="9M0-qM-SLF" secondAttribute="trailing" constant="8" id="ecw-Fh-4bP"/>
+                                        <constraint firstAttribute="bottom" secondItem="9M0-qM-SLF" secondAttribute="bottom" constant="18" id="wph-et-sN2"/>
+                                    </constraints>
+                                </view>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  Email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Za9-gH-ohN">
+                                    <rect key="frame" x="45" y="0.0" width="314" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="cWl-4r-DNf"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JXl-up-Cfo">
+                            <rect key="frame" x="0.0" y="130" width="359" height="60"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EVC-sK-ezt">
+                                    <rect key="frame" x="0.0" y="0.0" width="45" height="60"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bdi-HR-POq">
+                                            <rect key="frame" x="8" y="18" width="29" height="24"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TeleTextField" translatesAutoresizingMaskIntoConstraints="NO" id="phQ-Gr-Kpa">
+                                                    <rect key="frame" x="0.0" y="0.0" width="29" height="24"/>
+                                                </imageView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="bdi-HR-POq" secondAttribute="bottom" constant="18" id="XZt-kM-1FR"/>
+                                        <constraint firstAttribute="trailing" secondItem="bdi-HR-POq" secondAttribute="trailing" constant="8" id="eBJ-Nc-4dD"/>
+                                        <constraint firstItem="bdi-HR-POq" firstAttribute="leading" secondItem="EVC-sK-ezt" secondAttribute="leading" constant="8" id="k1D-it-Duh"/>
+                                        <constraint firstAttribute="width" constant="45" id="t3j-Sc-iMg"/>
+                                        <constraint firstItem="bdi-HR-POq" firstAttribute="top" secondItem="EVC-sK-ezt" secondAttribute="top" constant="18" id="tMN-Ok-gQM"/>
+                                    </constraints>
+                                </view>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  Phone number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1ur-bv-qXv">
+                                    <rect key="frame" x="45" y="0.0" width="314" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="29g-mi-jED"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2w5-FD-cJi">
+                            <rect key="frame" x="0.0" y="195" width="359" height="60"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dif-kg-O1t">
+                                    <rect key="frame" x="0.0" y="0.0" width="45" height="60"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="WSO-4m-N90">
+                                            <rect key="frame" x="8" y="18" width="29" height="24"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PasswordTextField" translatesAutoresizingMaskIntoConstraints="NO" id="Zh0-wd-4Pu">
+                                                    <rect key="frame" x="0.0" y="0.0" width="29" height="24"/>
+                                                </imageView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="45" id="BVY-tZ-VYG"/>
+                                        <constraint firstAttribute="trailing" secondItem="WSO-4m-N90" secondAttribute="trailing" constant="8" id="Hsx-Wx-LFK"/>
+                                        <constraint firstAttribute="bottom" secondItem="WSO-4m-N90" secondAttribute="bottom" constant="18" id="mby-OL-zU7"/>
+                                        <constraint firstItem="WSO-4m-N90" firstAttribute="top" secondItem="Dif-kg-O1t" secondAttribute="top" constant="18" id="mqd-Ha-Tcv"/>
+                                        <constraint firstItem="WSO-4m-N90" firstAttribute="leading" secondItem="Dif-kg-O1t" secondAttribute="leading" constant="8" id="wIv-Zh-XCr"/>
+                                    </constraints>
+                                </view>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TRv-OD-A1d">
+                                    <rect key="frame" x="45" y="0.0" width="314" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="l4I-7p-6Sb"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="255" id="CGJ-iA-gHA"/>
+                    </constraints>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q0e-yj-YBE">
+                    <rect key="frame" x="17" y="449" width="359" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="vmi-23-LWf"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Sign Up">
+                        <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="15"/>
+                        <color key="baseBackgroundColor" name="green"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="ActionSignUp:" destination="-1" eventType="touchUpInside" id="y7I-2m-IOI"/>
+                    </connections>
+                </button>
+                <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZY-yF-Lkp">
+                    <rect key="frame" x="0.0" y="39" width="393" height="120"/>
+                    <color key="barTintColor" name="Background Screen"/>
+                    <items>
+                        <navigationItem title="Sign Up" id="Y4D-ak-N2S">
+                            <barButtonItem key="leftBarButtonItem" image="CustomBack" id="MEw-fa-f05">
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <connections>
+                                    <action selector="ActionBackScreen:" destination="-1" id="YNl-Hk-IPY"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="Background Screen"/>
+            <constraints>
+                <constraint firstItem="AdB-KM-ggO" firstAttribute="top" secondItem="oZY-yF-Lkp" secondAttribute="bottom" id="0dM-rF-Bqw"/>
+                <constraint firstItem="Q0e-yj-YBE" firstAttribute="top" secondItem="AdB-KM-ggO" secondAttribute="bottom" constant="35" id="7UV-MV-dbt"/>
+                <constraint firstItem="oZY-yF-Lkp" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="G2y-UM-faR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="AdB-KM-ggO" secondAttribute="trailing" constant="17" id="IzW-eS-hti"/>
+                <constraint firstItem="Q0e-yj-YBE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="17" id="KpU-Bt-Vbh"/>
+                <constraint firstItem="AdB-KM-ggO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="17" id="QYl-5A-Mqx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Q0e-yj-YBE" secondAttribute="trailing" constant="17" id="hOx-ZE-0xC"/>
+                <constraint firstItem="AdB-KM-ggO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="kxn-e7-tfi"/>
+                <constraint firstItem="oZY-yF-Lkp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="qeF-S0-Yft"/>
+                <constraint firstItem="oZY-yF-Lkp" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="-20" id="sgF-AW-nWu"/>
+            </constraints>
+            <point key="canvasLocation" x="120" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="CustomBack" width="23" height="16"/>
+        <image name="EmailTextField" width="23" height="18"/>
+        <image name="PasswordTextField" width="18" height="23"/>
+        <image name="TeleTextField" width="23" height="23"/>
+        <image name="UserTextField" width="24" height="24"/>
+        <namedColor name="Background Screen">
+            <color red="0.95686274509803926" green="0.96078431372549022" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="green">
+            <color red="0.42352941176470588" green="0.77254901960784317" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

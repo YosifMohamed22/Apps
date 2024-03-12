@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnBoarding3ViewController" customModule="Talabaty" customModuleProvider="target">
+            <connections>
+                <outlet property="didPressedGetStarted" destination="Phu-qR-3fm" id="Fzl-D2-voE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enjoy Quality Items" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPb-h4-c6M">
+                    <rect key="frame" x="80" y="609" width="233" height="30"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwa-Vl-YbN">
+                    <rect key="frame" x="47" y="654" width="299" height="33.666666666666629"/>
+                    <string key="text">Lorem ipsum dolor sit amet, consetetur 
+sadipscing elitr, sed diam nonumy</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" name="SubTitleColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="U64-ak-JqY">
+                    <rect key="frame" x="15" y="159" width="363" height="380"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OnBoarding3" translatesAutoresizingMaskIntoConstraints="NO" id="RHt-in-LYj">
+                            <rect key="frame" x="0.0" y="0.0" width="363" height="380"/>
+                        </imageView>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="0WZ-TM-Jhv">
+                    <rect key="frame" x="140" y="752.66666666666663" width="248" height="57.333333333333371"/>
+                    <subviews>
+                        <pageControl opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" defersCurrentPageDisplay="YES" numberOfPages="4" currentPage="3" translatesAutoresizingMaskIntoConstraints="NO" id="c4h-jA-JWg">
+                            <rect key="frame" x="0.0" y="0.0" width="141.66666666666666" height="57.333333333333336"/>
+                            <color key="pageIndicatorTintColor" name="green"/>
+                        </pageControl>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Phu-qR-3fm">
+                            <rect key="frame" x="144.66666666666669" y="0.0" width="103.33333333333331" height="57.333333333333336"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Get Started">
+                                <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                <color key="baseForegroundColor" name="green"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="ActionGetStarted:" destination="-1" eventType="touchUpInside" id="TwL-e9-kCM"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="zwa-Vl-YbN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="47" id="0W6-3w-HuB"/>
+                <constraint firstItem="0WZ-TM-Jhv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="140" id="2qK-kl-Frj"/>
+                <constraint firstItem="U64-ak-JqY" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="3sW-mJ-nZb"/>
+                <constraint firstItem="hPb-h4-c6M" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="80" id="4Z0-Dr-5dc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="U64-ak-JqY" secondAttribute="trailing" constant="15" id="O4a-kB-8JN"/>
+                <constraint firstItem="hPb-h4-c6M" firstAttribute="top" secondItem="U64-ak-JqY" secondAttribute="bottom" constant="70" id="TTh-Nk-mrv"/>
+                <constraint firstItem="U64-ak-JqY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="ZOK-MG-hMN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0WZ-TM-Jhv" secondAttribute="trailing" constant="5" id="Zbb-0r-OCY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hPb-h4-c6M" secondAttribute="trailing" constant="80" id="hol-LE-FlK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zwa-Vl-YbN" secondAttribute="trailing" constant="47" id="j7Z-pg-Ghx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="0WZ-TM-Jhv" secondAttribute="bottom" constant="8" id="nvi-OQ-ns1"/>
+                <constraint firstItem="zwa-Vl-YbN" firstAttribute="top" secondItem="hPb-h4-c6M" secondAttribute="bottom" constant="15" id="tWn-LK-OgC"/>
+                <constraint firstItem="0WZ-TM-Jhv" firstAttribute="top" secondItem="zwa-Vl-YbN" secondAttribute="bottom" constant="65" id="xOc-eo-hHd"/>
+            </constraints>
+            <point key="canvasLocation" x="119.84732824427481" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="OnBoarding3" width="380" height="380"/>
+        <namedColor name="SubTitleColor">
+            <color red="0.52549019607843139" green="0.53333333333333333" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="green">
+            <color red="0.42352941176470588" green="0.77254901960784317" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

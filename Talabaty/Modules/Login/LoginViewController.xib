@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Talabaty" customModuleProvider="target">
+            <connections>
+                <outlet property="EmailImageView" destination="oFP-wO-Jyz" id="VsW-23-DzR"/>
+                <outlet property="EmailTextField" destination="XqV-jT-A13" id="S6h-bR-ERD"/>
+                <outlet property="ForgotPassword" destination="OKK-Ee-tpO" id="6AB-nO-o1f"/>
+                <outlet property="LoginButton" destination="kVP-M2-sUB" id="Wgt-Ug-vHC"/>
+                <outlet property="PasswordImageView" destination="Kwt-WN-N6c" id="cVa-BJ-6fZ"/>
+                <outlet property="PasswordTextField" destination="sR9-67-v9r" id="Wsp-4a-S75"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVP-M2-sUB">
+                    <rect key="frame" x="17" y="371" width="359" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="egb-Ob-AUG"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Login">
+                        <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="15"/>
+                        <color key="baseBackgroundColor" name="green"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="didPressedLogin:" destination="-1" eventType="touchUpInside" id="4w4-Nn-oj3"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKK-Ee-tpO">
+                    <rect key="frame" x="230" y="309" width="154" height="32"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Forgot password">
+                        <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                        <color key="baseForegroundColor" red="0.25098039215686274" green="0.49411764705882355" blue="0.7803921568627451" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="didPressedForgotPassword:" destination="-1" eventType="touchUpInside" id="asf-9s-Sbl"/>
+                    </connections>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="mOW-3x-iox">
+                    <rect key="frame" x="17" y="159" width="359" height="125"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZTy-1G-tub">
+                            <rect key="frame" x="0.0" y="0.0" width="359" height="60"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oFP-wO-Jyz">
+                                    <rect key="frame" x="0.0" y="0.0" width="45" height="60"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7pd-yt-Isr">
+                                            <rect key="frame" x="8" y="19" width="29" height="22"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EmailTextField" translatesAutoresizingMaskIntoConstraints="NO" id="KAC-ii-rNt">
+                                                    <rect key="frame" x="0.0" y="0.0" width="29" height="22"/>
+                                                </imageView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="7pd-yt-Isr" secondAttribute="bottom" constant="19" id="69V-2k-c75"/>
+                                        <constraint firstItem="7pd-yt-Isr" firstAttribute="leading" secondItem="oFP-wO-Jyz" secondAttribute="leading" constant="8" id="Iyj-JY-yo5"/>
+                                        <constraint firstAttribute="width" constant="45" id="OMi-eM-deg"/>
+                                        <constraint firstAttribute="trailing" secondItem="7pd-yt-Isr" secondAttribute="trailing" constant="8" id="TIU-r7-WMF"/>
+                                        <constraint firstItem="7pd-yt-Isr" firstAttribute="top" secondItem="oFP-wO-Jyz" secondAttribute="top" constant="19" id="c46-gj-e93"/>
+                                    </constraints>
+                                </view>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XqV-jT-A13">
+                                    <rect key="frame" x="45" y="0.0" width="314" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="7OD-kJ-Qow"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <textInputTraits key="textInputTraits" textContentType="email"/>
+                                    <imageReference key="background" image="envelope" catalog="system" symbolScale="default" variableValue="0.0"/>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="icA-XY-0ng">
+                            <rect key="frame" x="0.0" y="65" width="359" height="60"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kwt-WN-N6c">
+                                    <rect key="frame" x="0.0" y="0.0" width="45" height="60"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cOl-N4-ZtY">
+                                            <rect key="frame" x="8" y="18" width="29" height="24"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PasswordTextField" translatesAutoresizingMaskIntoConstraints="NO" id="rsG-ev-Ws9">
+                                                    <rect key="frame" x="0.0" y="0.0" width="29" height="24"/>
+                                                </imageView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="45" id="53b-1L-AgL"/>
+                                        <constraint firstItem="cOl-N4-ZtY" firstAttribute="leading" secondItem="Kwt-WN-N6c" secondAttribute="leading" constant="8" id="jwI-Rw-0EY"/>
+                                        <constraint firstItem="cOl-N4-ZtY" firstAttribute="top" secondItem="Kwt-WN-N6c" secondAttribute="top" constant="18" id="oBC-sb-5Tx"/>
+                                        <constraint firstAttribute="bottom" secondItem="cOl-N4-ZtY" secondAttribute="bottom" constant="18" id="ydS-3b-Ztt"/>
+                                        <constraint firstAttribute="trailing" secondItem="cOl-N4-ZtY" secondAttribute="trailing" constant="8" id="zSw-Po-Iua"/>
+                                    </constraints>
+                                </view>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sR9-67-v9r">
+                                    <rect key="frame" x="45" y="0.0" width="314" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="Z2j-Nw-FzX"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <textInputTraits key="textInputTraits" textContentType="password"/>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="125" id="Bsk-wq-UMv"/>
+                    </constraints>
+                </stackView>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="job-DL-1GV">
+                    <rect key="frame" x="0.0" y="39" width="393" height="120"/>
+                    <items>
+                        <navigationItem title="Login" style="browser" id="0Dq-jg-L7t">
+                            <barButtonItem key="leftBarButtonItem" image="CustomBack" id="wQ1-o7-O9b">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                    <navigationBarAppearance key="standardAppearance">
+                        <color key="backgroundColor" name="Background Screen"/>
+                    </navigationBarAppearance>
+                </navigationBar>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.95686274509803915" green="0.96078431372549022" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="mOW-3x-iox" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="17" id="6PI-t1-xwa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mOW-3x-iox" secondAttribute="trailing" constant="17" id="DA7-Hv-CGC"/>
+                <constraint firstItem="mOW-3x-iox" firstAttribute="top" secondItem="job-DL-1GV" secondAttribute="bottom" id="Eif-Sh-OSa"/>
+                <constraint firstAttribute="trailing" secondItem="OKK-Ee-tpO" secondAttribute="trailing" constant="9" id="HGb-R5-UUp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="job-DL-1GV" secondAttribute="trailing" id="JJ9-12-7lw"/>
+                <constraint firstItem="OKK-Ee-tpO" firstAttribute="top" secondItem="mOW-3x-iox" secondAttribute="bottom" constant="25" id="LaA-R2-zDI"/>
+                <constraint firstItem="OKK-Ee-tpO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="230" id="dTT-Bj-Ivz"/>
+                <constraint firstItem="mOW-3x-iox" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="f0d-kV-uQc"/>
+                <constraint firstItem="kVP-M2-sUB" firstAttribute="top" secondItem="OKK-Ee-tpO" secondAttribute="bottom" constant="30" id="g1t-72-VHM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kVP-M2-sUB" secondAttribute="trailing" constant="17" id="ina-jH-RSA"/>
+                <constraint firstItem="kVP-M2-sUB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="17" id="lpr-1p-NJ5"/>
+                <constraint firstItem="job-DL-1GV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="-20" id="oXX-qA-15u"/>
+                <constraint firstItem="job-DL-1GV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="r9W-Fd-eaI"/>
+            </constraints>
+            <point key="canvasLocation" x="113.74045801526717" y="12.67605633802817"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="CustomBack" width="23" height="16"/>
+        <image name="EmailTextField" width="23" height="18"/>
+        <image name="PasswordTextField" width="18" height="23"/>
+        <image name="envelope" catalog="system" width="128" height="85"/>
+        <namedColor name="Background Screen">
+            <color red="0.95686274509803926" green="0.96078431372549022" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="green">
+            <color red="0.42352941176470588" green="0.77254901960784317" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IntroViewController" customModule="Talabaty" customModuleProvider="target">
+            <connections>
+                <outlet property="IntroImage" destination="kUd-G8-wgx" id="tr2-0W-RZv"/>
+                <outlet property="LoginButton" destination="zqZ-4I-JFK" id="YUe-4r-QSn"/>
+                <outlet property="SignUpButton" destination="vzH-uO-GIZ" id="nNA-f0-QRl"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Intro" translatesAutoresizingMaskIntoConstraints="NO" id="kUd-G8-wgx" customClass="CurvedUIImageView" customModule="Talabaty" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="-32" width="393" height="550.33333333333337"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="CurvedPercent">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EcQ-qO-NOb">
+                    <rect key="frame" x="55" y="553.33333333333337" width="283" height="60"/>
+                    <string key="text">Premium products
+at your doorstep</string>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="Order what you want from products and enjoy 20 minutes delivery." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dW8-0h-Fou">
+                    <rect key="frame" x="47" y="633.33333333333337" width="299" height="40.666666666666629"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" name="SubTitleColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zqZ-4I-JFK">
+                    <rect key="frame" x="47" y="719" width="299" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="ckH-Cr-eDT"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Login">
+                        <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="15"/>
+                        <color key="baseBackgroundColor" name="green"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="didPressedLogin:" destination="-1" eventType="touchUpInside" id="M9D-V3-SMb"/>
+                    </connections>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="-15" translatesAutoresizingMaskIntoConstraints="NO" id="5ua-OJ-egI">
+                    <rect key="frame" x="85" y="780" width="223" height="32"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don’t have an account?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yG9-NB-GGh">
+                            <rect key="frame" x="0.0" y="0.0" width="161" height="32"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" name="SubTitleColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzH-uO-GIZ">
+                            <rect key="frame" x="146" y="0.0" width="77" height="32"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Sign up">
+                                <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="15"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="didPressedSignUp:" destination="-1" eventType="touchUpInside" id="bGh-P8-oKG"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="5ua-OJ-egI" firstAttribute="top" secondItem="zqZ-4I-JFK" secondAttribute="bottom" constant="11" id="5kk-PA-1cp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EcQ-qO-NOb" secondAttribute="trailing" constant="55" id="Adi-4d-T2e"/>
+                <constraint firstItem="kUd-G8-wgx" firstAttribute="topMargin" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="-24" id="Bf8-TP-cCj"/>
+                <constraint firstItem="5ua-OJ-egI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="85" id="CsB-nH-Jng"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dW8-0h-Fou" secondAttribute="trailing" constant="47" id="Cvm-Hn-Rut"/>
+                <constraint firstItem="dW8-0h-Fou" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="47" id="HiH-uM-gYV"/>
+                <constraint firstAttribute="trailing" secondItem="5ua-OJ-egI" secondAttribute="trailing" constant="85" id="Jg2-BY-XzS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zqZ-4I-JFK" secondAttribute="trailing" constant="47" id="Kux-Un-r9y"/>
+                <constraint firstItem="EcQ-qO-NOb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="55" id="UJn-21-Es8"/>
+                <constraint firstItem="EcQ-qO-NOb" firstAttribute="top" secondItem="kUd-G8-wgx" secondAttribute="bottom" constant="35" id="dZZ-bI-yDX"/>
+                <constraint firstItem="zqZ-4I-JFK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="47" id="e0Y-de-Yj2"/>
+                <constraint firstItem="zqZ-4I-JFK" firstAttribute="top" secondItem="dW8-0h-Fou" secondAttribute="bottom" constant="45" id="e39-9z-OJd"/>
+                <constraint firstItem="kUd-G8-wgx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="p7h-aS-pV5"/>
+                <constraint firstAttribute="bottom" secondItem="5ua-OJ-egI" secondAttribute="bottom" constant="40" id="uJU-3s-8Xl"/>
+                <constraint firstItem="dW8-0h-Fou" firstAttribute="top" secondItem="EcQ-qO-NOb" secondAttribute="bottom" constant="20" id="vwk-26-k9t"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kUd-G8-wgx" secondAttribute="trailing" id="wJw-5o-1Li"/>
+            </constraints>
+            <point key="canvasLocation" x="119.84732824427481" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Intro" width="414" height="540"/>
+        <namedColor name="SubTitleColor">
+            <color red="0.52549019607843139" green="0.53333333333333333" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="green">
+            <color red="0.42352941176470588" green="0.77254901960784317" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

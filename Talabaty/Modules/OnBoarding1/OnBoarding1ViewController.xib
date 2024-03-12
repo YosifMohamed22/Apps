@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnBoarding1ViewController" customModule="Talabaty" customModuleProvider="target">
+            <connections>
+                <outlet property="didPressedNext" destination="ZrL-3d-DDf" id="brk-bd-SNy"/>
+                <outlet property="didPressedSkip" destination="M35-d4-sWb" id="y79-Ao-8ga"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OnBoarding1" translatesAutoresizingMaskIntoConstraints="NO" id="7EM-5R-Ena">
+                    <rect key="frame" x="15" y="159" width="363" height="384"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buy Grocery" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDc-WB-4YI">
+                    <rect key="frame" x="110" y="613" width="173" height="30"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vF-HA-IL3">
+                    <rect key="frame" x="47" y="658" width="299" height="36"/>
+                    <string key="text">Lorem ipsum dolor sit amet, consetetur 
+sadipscing elitr, sed diam nonumy</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" name="SubTitleColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M35-d4-sWb">
+                    <rect key="frame" x="36" y="775" width="53.666666666666657" height="32"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Skip">
+                        <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                        <color key="baseForegroundColor" name="SubTitleColor"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="ActionSkip:" destination="-1" eventType="touchUpInside" id="DiS-KI-Amf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZrL-3d-DDf">
+                    <rect key="frame" x="301" y="775" width="56" height="32"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Next">
+                        <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                        <color key="baseForegroundColor" name="GreenColor"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="ActionNext:" destination="-1" eventType="touchUpInside" id="BvT-9m-sNG"/>
+                    </connections>
+                </button>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="rop-vY-rPK">
+                    <rect key="frame" x="119.66666666666667" y="774" width="151.33333333333331" height="44"/>
+                    <color key="pageIndicatorTintColor" name="GreenColor"/>
+                    <color key="currentPageIndicatorTintColor" name="SubTitleColor"/>
+                </pageControl>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7vF-HA-IL3" secondAttribute="trailing" constant="47" id="16B-Ep-Ylh"/>
+                <constraint firstItem="7vF-HA-IL3" firstAttribute="top" secondItem="jDc-WB-4YI" secondAttribute="bottom" constant="15" id="5yM-ua-rJ3"/>
+                <constraint firstItem="7vF-HA-IL3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="47" id="7VA-eO-vZe"/>
+                <constraint firstItem="7EM-5R-Ena" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="AZv-9C-jbc"/>
+                <constraint firstItem="7EM-5R-Ena" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="DyS-4I-Qqh"/>
+                <constraint firstAttribute="bottom" secondItem="M35-d4-sWb" secondAttribute="bottom" constant="45" id="ImX-UU-Dcw"/>
+                <constraint firstItem="jDc-WB-4YI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="110" id="LTf-6G-Suo"/>
+                <constraint firstItem="M35-d4-sWb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="36" id="P0j-oI-EmS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7EM-5R-Ena" secondAttribute="trailing" constant="15" id="VE8-e8-iVm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ZrL-3d-DDf" secondAttribute="trailing" constant="36" id="Xnl-LY-FzE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jDc-WB-4YI" secondAttribute="trailing" constant="110" id="YZc-u2-gg4"/>
+                <constraint firstItem="rop-vY-rPK" firstAttribute="top" secondItem="7vF-HA-IL3" secondAttribute="bottom" constant="80" id="fUT-z8-hEy"/>
+                <constraint firstItem="7EM-5R-Ena" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="nUr-Jd-WY0"/>
+                <constraint firstItem="jDc-WB-4YI" firstAttribute="top" secondItem="7EM-5R-Ena" secondAttribute="bottom" constant="70" id="nhG-Wm-85M"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="rop-vY-rPK" secondAttribute="bottom" id="tf4-re-k7d"/>
+                <constraint firstItem="ZrL-3d-DDf" firstAttribute="leading" secondItem="rop-vY-rPK" secondAttribute="trailing" constant="30" id="x0w-cK-5aU"/>
+                <constraint firstItem="rop-vY-rPK" firstAttribute="leading" secondItem="M35-d4-sWb" secondAttribute="trailing" constant="30" id="y3G-ho-vTU"/>
+                <constraint firstAttribute="bottom" secondItem="ZrL-3d-DDf" secondAttribute="bottom" constant="45" id="yWS-Gw-Ftr"/>
+            </constraints>
+            <point key="canvasLocation" x="12.977099236641221" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="OnBoarding1" width="384" height="384"/>
+        <namedColor name="GreenColor">
+            <color red="0.42352941176470588" green="0.77254901960784317" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SubTitleColor">
+            <color red="0.52549019607843139" green="0.53333333333333333" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
